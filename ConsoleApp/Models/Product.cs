@@ -1,6 +1,6 @@
 namespace ConsoleApp.Models;
 
-public record Product : IPrimaryEntity {
+public record Product : IndexedEntity, IPrimaryEntity {
   public long Id { get; set; }
   public string Name { get; set; }
   public string Description { get; set; }
